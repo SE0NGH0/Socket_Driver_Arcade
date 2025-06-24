@@ -43,7 +43,7 @@ int main(int argc, char *argv[]) {
             continue;
         }
         if (strncmp(buf, "RPS", 3) == 0) {
-            printf("[게임: 가위바위보] 선택을 입력하세요: ");
+            printf("[게임: 가위바위보] 선택을 입력하세요(rock/paper/scissors): ");
             fflush(stdout);
             char in[BUF_SIZE];
             if (!fgets(in, BUF_SIZE, stdin)) break;
