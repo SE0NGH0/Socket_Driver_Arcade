@@ -72,7 +72,7 @@ Raspi 환경
 project/
 ├── server.c           # 게임 서버 및 LED 제어 로직
 ├── client.c           # 게임 클라이언트 (터미널 인터페이스)
-├── led_control.c      # (선택) /dev/led_control 커널 모듈
+├── led.c      # (선택) /dev/led_control 커널 모듈
 └── Makefile           # 빌드 스크립트
 ```
 
@@ -100,7 +100,7 @@ project/
 > LED 제어를 커널 모듈 방식으로 하고 싶을 경우에만 진행
 
 ```bash
-sudo insmod led_control.ko
+sudo insmod led.ko
 # 비root 사용자도 쓰기 권한이 필요하다면
 sudo chmod 666 /dev/led_control
 ```
@@ -161,7 +161,7 @@ system("raspi-gpio set 27 op dl"); // OFF
 * 승리/패배/무승부 메시지 출력
 * 3라운드 종료 후 서버 요약 메시지 수신
 
-### `led_control.c` (선택적 커널 모듈)
+### `led.c` (선택적 커널 모듈)
 
 * `/dev/led_control`에 `echo <0~7> >` 입력 시 LED 비트마스크 제어
 * 동적 `gpio_request()` 및 `gpio_set_value()` 사용
