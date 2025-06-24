@@ -41,8 +41,7 @@ Raspi 환경
 
   * [`server.c`](#serverc)
   * [`client.c`](#clientc)
-  * [`led_control.c` (선택적 커널 모듈)](#led_controlc-선택적-커널-모듈)
-* [라이선스](#라이선스)
+  * [`led.c` (선택적 커널 모듈)](#ledc-선택적-커널-모듈)
 
 ## 주요 기능
 
