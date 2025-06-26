@@ -163,3 +163,12 @@ sudo ./server_final
 
 ---
 
+## 데모 동영상
+
+아래 링크에서 프로젝트 실행 모습을 확인할 수 있습니다:
+
+* [https://youtu.be/a2IlBgpWruA](https://youtu.be/a2IlBgpWruA)
+* [https://youtube.com/shorts/zeM5-n1U8Fc](https://youtube.com/shorts/zeM5-n1U8Fc)
+* [https://youtube.com/shorts/pw4d3U6k4-s](https://youtube.com/shorts/pw4d3U6k4-s)
+
+---
