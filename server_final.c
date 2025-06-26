@@ -1,5 +1,5 @@
 /*
- * server_gpio.c - TCP 멀티플레이어 미니게임 서버
+ * server_final.c - TCP 멀티플레이어 미니게임 서버
  * I2C LCD1602로 점수 출력 및 raspi-gpio로 라운드별 LED 피드백
  */
 
