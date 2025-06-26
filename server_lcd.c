@@ -215,10 +215,10 @@ int main() {
     int p1 = game.scores[0];
     int p2 = game.scores[1];
     char line1[17] = {0}, line2[17] = {0}, lcdbuf[33] = {0};
-    snprintf(line1, sizeof(line1), "P1 %dwin %dlose", p1, 3 - p1);
+    snprintf(line1, sizeof(line1), "P1: %d win %d lose", p1, 3 - p1);
     int l1 = strlen(line1);
     if(l1 < 16) memset(line1 + l1, ' ', 16 - l1);
-    snprintf(line2, sizeof(line2), "P2 %dwin %dlose", p2, 3 - p2);
+    snprintf(line2, sizeof(line2), "P2: %d win %d lose", p2, 3 - p2);
     int l2 = strlen(line2);
     if(l2 < 16) memset(line2 + l2, ' ', 16 - l2);
     memcpy(lcdbuf, line1, 16);
@@ -230,7 +230,7 @@ int main() {
 
     // 클라이언트에 최종 결과 전송
     char summary[BUF_SIZE];
-    snprintf(summary, sizeof(summary), "P1 %d win %d lose, P2 %d win %d lose\n",
+    snprintf(summary, sizeof(summary), "P1: %d win %d lose, P2: %d win %d lose\n",
              p1, 3-p1, p2, 3-p2);
     for(int i=0; i<MAX_CLIENTS; i++) {
         send(clients[i]->sockfd, summary, strlen(summary), 0);
