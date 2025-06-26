@@ -12,7 +12,7 @@ Raspi 환경
 1. sudo insmod lcd1602.ko
 2. sudo chmod 666 /dev/lcd1602
 3. dmesg | tail로 lcd1602 register 확인
-4. sudo mknod /dev/lcd1602 c $major $minor(dmesg | tail로 확인)
+4. sudo mknod /dev/lcd1602 c $MAJOR $MINOR (dmesg | tail로 확인)
 5. vim server_final.c
 6. gcc server_final.c -o server_final
 7. vim client_final.c
