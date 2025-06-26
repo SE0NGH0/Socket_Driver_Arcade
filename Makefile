@@ -1,4 +1,4 @@
-obj-m := led.o
+obj-m := lcd1602.o
 KDIR := $(HOME)/project/linux
 PWD  := $(shell pwd)
 
